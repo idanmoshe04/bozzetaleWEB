@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>boozetale- צור קשר</title>
+    <link rel="icon" href="Images/B.png">
+    <meta name="description" content="עמוד ליצירת קשר עם כותבי האתר" />
+    <meta name="keywords" content="ארוחה, אלכוהול, שם פרטי, שם משפחה, אי-מייל, טלפון" />
+    <meta name="author" content="עידן משה, הגר גוטשטיין, שחר מהלל ועפר רז" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/StyleContact.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+<body>
+    <div id="container">
+        <div role="main">
+            <article>
+                <div>
+                    <a href="#yellowPage" id="skip_to_content">דלג לתוכן העמוד</a>
+                </div>
+                <a href="homePage.html"><img src="Images/White logo - Drop shadow.png" title="לוגו בוזטייל" id="logoh" /></a>
+                <nav class="navTop">
+                    <ul>
+                        <li>
+                            <a href="mealsPage.html">
+                                אלכוהול ואוכל
+                            </a>
+                            <ul>
+                                <li><a href="ItalyPage.html">ארוחה איטלקית</a></li>
+                                <li><a href="MexicoPage.html">ארוחה מקסיקנית</a> </li>
+                                <li><a href="" class="notActive">ארוחה אמריקאית</a></li>
+                                <li><a href="" class="notActive">ארוחה יפנית</a></li>
+                                <li><a href="" class="notActive">ארוחה ישראלית</a></li>
+                                <li><a href="" class="notActive">ארוחה יוונית</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="" class="notActive">סוגי אלכוהול</a></li>
+                        <li> <a href="" class="notActive">אלכוהול לפי טעם</a></li>
+                        <li> <a href="" class="notActive">הברמן המתחיל</a></li>
+                    </ul>
+                </nav>
+                <header>
+                    <div id="backpic"></div>
+                    <h1 id="firstp">
+                        צור קשר
+                    </h1>
+                </header>
+                <div id="yellowPage">
+                    <nav id="navPages">
+                        <ol>
+                            <li><a href="homePage.html" id="notVisited">דף בית</a></li>
+                            <li>צור קשר</li>
+                        </ol>
+                    </nav>
+                    <h2 id="instructions">
+                        תמיד כאן כדי לעזור!
+                    </h2>
+                </div>
+                <form aria-labelledby="firstp">
+                    <label for="firstName">
+                        <span class="Required">*</span>
+                        <b id="first">שם פרטי:</b>
+                        <br />
+                        <input id="firstName" type="text" class="error"
+                               required aria-required="true" aria-labelledby="first" aria-invalid="true" />
+                        <br />
+                    </label>
+                    <br />
+                    <label for="lastName">
+                        <span class="Required">*</span>
+                        <b id="family">שם משפחה:</b>
+                        <br />
+                        <input id="lastName" type="text" class="error"
+                               required aria-required="true" aria-labelledby="family" aria-invalid="true" />
+                        <br />
+                    </label>
+                    <br />
+                    <label for="phonenum">
+                        <span class="Required">*</span>
+                        <b id="phonenum">טלפון נייד</b>
+                        <br />
+                        <input id="phone" type="tel" class="input error" name="phonenum"
+                               required aria-required="true" aria-labelledby="phone" aria-invalid="true" size="10" />
+                        <br />
+                    </label>
+                    <br />
+                    <label for="mail">
+                        <span class="Required">*</span>
+                        <b id="email">אי-מייל:</b>
+                        <br />
+                        <input id="mail" type="email" name="email"
+                               required aria-required="true" aria-labelledby="email" class="error" aria-invalid="true" />
+                        <br />
+                    </label>
+                    <br />
+                    <fieldset>
+                        <legend><b>מגדר:</b></legend>
+                        <div>
+                            <label for="male">
+                                <input id="male" type="radio" name="gender" />
+                                <span>גבר</span>
+                            </label>
+                            <br />
+                            <label for="female">
+                                <input id="female" type="radio" name="gender" />
+                                <span>אישה</span>
+                            </label>
+                            <br />
+                            <label for="Other">
+                                <input id="Other" type="radio" name="gender" />
+                                <span>אחר</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <br />
+                    <br />
+                    <label for="likedContent">
+                        <b>תוכן שאהבתם:</b>
+                        <br />
+                        <input id="food" type="checkbox" />
+                        אוכל ואלכוהול
+                        <br />
+                        <input id="type" type="checkbox" />
+                        סוגי אלכוהול
+                        <br />
+                        <input id="taste" type="checkbox" />
+                        התאמה לטעם
+                        <br />
+                        <input id="start" type="checkbox" />
+                        הברמן המתחיל
+                        <br />
+                    </label>
+                    <br />
+                    <label for="newContent">
+                        <b>הצעות לתוכן נוסף:</b>
+                        <br />
+                        <textarea id="newContent" rows="3" cols="50" placeholder="הצעות לתוכן נוסף"></textarea>
+                    </label>
+                    <br />
+                    <br />
+                    <label for="newQuestions">
+                        <b>שאלות לצוות האתר:</b>
+                        <br />
+                        <textarea id="newQuestions" rows="3" cols="50" placeholder="שאלות לצוות האתר"></textarea>
+                    </label>
+                    <br />
+                    <label for="sendForm">
+                        <input id="sendForm" type="submit" value="שליחה" />
+                    </label>
+                    <br />
+                    <br />
+                    <div id="feedback"></div>
+                </form>
+                <footer>
+                    <img src="Images/homepage/fotter.png" title="תחתית עמוד" id="footer" />
+                    <section id="map">
+                        <section class="alcoholFood">
+                            <h3 class="title3"> <a href="mealsPage.html" class="headLinesBottom">אלכוהול ואוכל</a></h3>
+                            <ul>
+                                <li><a href="ItalyPage.html">ארוחה איטלקית</a></li>
+                                <li><a href="MexicoPage.html">ארוחה מקסיקנית</a></li>
+                                <li><a href="" class="notActive"> ארוחה אמריקאית</a></li>
+                                <li><a href="" class="notActive"> ארוחה יפנית</a></li>
+                                <li><a href="" class="notActive"> ארוחה ישראלית</a></li>
+                                <li><a href="" class="notActive"> ארוחה יוונית</a></li>
+                            </ul>
+                        </section>
+                        <section class="alcohol">
+                            <h3 class="title3"><a href="" class="notActive headLinesBottom">סוגי אלכוהול</a></h3>
+                            <ul>
+                                <li><a href="" class="notActive"> אניס</a></li>
+                                <li><a href="" class="notActive">טקילה</a></li>
+                                <li><a href="" class="notActive"> ליקרים</a></li>
+                                <li><a href="" class="notActive"> קוניאק </a></li>
+                                <li><a href="" class="notActive"> רום </a></li>
+                                <li><a href="" class="notActive"> יינות </a></li>
+                                <li><a href="" class="notActive"> וודקה </a></li>
+                                <li><a href="" class="notActive"> וויסקי </a></li>
+                                <li><a href="" class="notActive"> ג'ין </a></li>
+                                <li><a href="" class="notActive"> קמפרי </a></li>
+                            </ul>
+                        </section>
+                        <section class="taste">
+                            <h3 class="title3"><a href="" class="notActive headLinesBottom"> אלכוהול לפי טעם</a></h3>
+                            <ul>
+                                <li><a href="" class="notActive"> חמוץ </a></li>
+                                <li><a href="" class="notActive"> פירותי </a></li>
+                                <li><a href="" class="notActive"> מתוק </a></li>
+                            </ul>
+                        </section>
+                        <section class="barmen">
+                            <h3 class="title3"> <a href="" class="notActive headLinesBottom">הברמן המתחיל</a></h3>
+                            <ul>
+                                <li><a href="" class="notActive"> ציוד נדרש </a></li>
+                                <li><a href="" class="notActive"> שיטות להכנת קוקטיילים </a></li>
+                                <li><a href="" class="notActive"> קישוטים </a></li>
+                            </ul>
+                        </section>
+                    </section>
+                    <img src="Images/homepage/line-01.png" id="line" alt="" />
+                    <section id="about">
+                        <h3> <a href="about.html" class="noline">אודות</a></h3>
+                    </section>
+                    <section id="contact">
+                        <h3>
+                            <a href="ContactUs.html" class="noline">צור קשר</a>
+                        </h3>
+                    </section>
+                    <section id="use">
+                        <h3><a href="irgun.html" class="noline">ארגון וייצוג ידע</a></h3>
+                    </section>
+                    <p id="copyRight">כל הזכויות שמורות לצוות <span lang="en">boozetale </span></p>
+                </footer>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

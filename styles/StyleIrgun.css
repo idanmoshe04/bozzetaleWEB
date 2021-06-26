@@ -1,0 +1,36 @@
+﻿/*הטמעת פונטים*/
+@font-face {
+    font-family: 'OS Aran_400FFC';
+    src: url('../OS Aran_400FFC/OS Aran_400FFC.eot') format('embedded-opentype');
+    src: url('../OS Aran_400FFC/OS Aran_400FFC.ttf') format('truetype');
+    src: url('../OS Aran_400FFC/OS Aran_400FFC.woff') format('woff');
+}
+
+#container * {
+    font-family: 'OS Aran_400FFC';
+}
+
+/*הגדרות עמוד כללי*/
+body {
+    direction: rtl;
+    background-color: #568587;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+/*כפתור חזרה לדף הבית*/
+div a {
+    color: white;
+    font-size: 14pt;
+    position: absolute;
+}
+
+/*תוכן ייצוג*/
+#irgun {
+    width: 600px;
+    height: 500px;
+    margin-right:200px;
+}

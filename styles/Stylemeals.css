@@ -1,0 +1,606 @@
+﻿/*הטמעת פונטים*/
+
+@font-face {
+    font-family: 'OS Aran_400FFC';
+    src: url('../OS Aran_400FFC/OS Aran_400FFC.eot') format('embedded-opentype');
+    src: url('../OS Aran_400FFC/OS Aran_400FFC.ttf') format('truetype');
+src: url('../OS Aran_400FFC/OS Aran_400FFC.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OS Aran_W_500FFC';
+    src: url('../OS Aran_W_500FFC/OS Aran_W_500FFC.eot') format('embedded-opentype');
+    src: url('../OS Aran_W_500FFC/OS Aran_W_500FFC.ttf') format('truetype');
+src: url('../OS Aran_W_500FFC/OS Aran_W_500FFC.woff') format('woff');
+}
+
+/*הגדרות עמוד*/
+body {
+    direction: rtl;
+    background-color: #568587;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+    #container * {
+        font-family: 'OS Aran_400FFC';
+    }
+
+
+/*דלג לתוכן העמוד*/
+#skip_to_content {
+    color: white;
+    font-size: 14pt;
+}
+
+    #skip_to_content:focus {
+        background-color: #c4bb84;
+    }
+
+
+/*תפריט ניווט ראשי*/
+
+.navTop ul {
+    list-style: none;
+    position: relative;
+    top: 33px;
+    right: 24px;
+    z-index: 1;
+}
+
+    .navTop ul li {
+        display: inline-block;
+        float: right;
+        margin-top: 12px;
+        margin-right: -33px;
+        margin-left: 40px;
+        margin-bottom: 19px;
+    }
+
+        .navTop ul li a {
+            display: inline-block;
+            text-decoration: none;
+            list-style: none;
+            text-align: center;
+            font-weight: bold;
+            color: black;
+            background-color: #c4bb84;
+            border: 1px solid black;
+            width: 138px;
+            height: 20px;
+            padding-top: 14px;
+            margin-right: 12px;
+            border-radius: 7px;
+            padding-bottom: 20px;
+            margin-top: -16px;
+            margin-bottom: -16px;
+            font-size: 16pt;
+        }
+
+            .navTop ul li a:hover {
+                background-color: #AD4B5E;
+                color: white;
+            }
+
+            .navTop ul li a:focus {
+                background-color: #AD4B5E;
+                color: white;
+            }
+
+
+        .navTop ul li:hover a span {
+            background-color: #AD4B5E;
+            width: 125px;
+            border-radius: 13px;
+            height: 20px;
+        }
+
+
+        .navTop ul li:focus a span {
+            background-color: #AD4B5E;
+            width: 125px;
+            border-radius: 13px;
+            height: 20px;
+        }
+
+
+        /*//תפריט נפתח//*/
+
+        .navTop ul li ul {
+            display: none;
+            position: absolute;
+        }
+
+        .navTop ul li:hover ul {
+            display: block;
+            width: 125px;
+            margin-right: -24px;
+            margin-top: 23px;
+        }
+
+        .navTop ul li:focus ul {
+            display: block;
+            width: 125px;
+            margin-right: -24px;
+            margin-top: 23px;
+        }
+
+
+.notActive {
+    cursor: not-allowed;
+}
+
+/*תפריט פירורי לחם*/
+#navPages ol {
+    padding-top: 25px;
+    position: relative;
+    top: 463px;
+    right: -321px;
+    font-size: 16pt;
+}
+
+    #navPages ol li {
+        display: inline-block;
+        color: black;
+        font-size: 16pt;
+        list-style: none;
+    }
+
+        #navPages ol li:after {
+            content: " >";
+        }
+
+        #navPages ol li:last-child:after {
+            content: "";
+        }
+
+
+.notActive {
+    cursor: not-allowed;
+}
+
+/*לוגו*/
+
+#logo {
+    position: relative;
+    right: 290px;
+    top: 10px;
+    padding-top: -30px;
+    height: 107px;
+}
+
+
+/*ריבוע צהוב כהה*/
+
+#centerPage {
+    background-color: #d4c884;
+    width: 1130px;
+    height: 930px;
+    float: right;
+    position: absolute;
+    margin-top: -548px;
+    margin-right: 43px;
+}
+
+
+/*כותרת עמוד*/
+
+#h1koteret {
+    float: right;
+    font-family: 'OS Aran_W_500FFC';
+    text-align: center;
+    font-size: 48pt;
+    background-color: #9BD1D5;
+    width: 380px;
+    height: 65px;
+    position: relative;
+    padding-left: 4px;
+    top: 374px;
+    right: 43px;
+    opacity: 0.85;
+    border-radius: 7px;
+    z-index: 1;
+    padding-top: 7px;
+}
+
+
+/*תמונה ראשית*/
+
+#cheers {
+    float: right;
+    width: 1200px;
+    position: relative;
+    bottom: 67px;
+    right: 43px;
+    z-index: -1;
+}
+
+
+/*מלבן צהוב כרקע*/
+
+#yellowPage {
+    background-color: #F7F4BE;
+    width: 1200px;
+    height: 1150px;
+    position: relative;
+    top: 433px;
+    right: 43px;
+    z-index: -1;
+}
+
+/*כותרת h2*/
+#h2koteret {
+    font-size: 33pt;
+    color: black;
+    position: relative;
+    top: 32px;
+    right: 60px;
+}
+
+/*הנחיות ראשיות לשימוש בדף*/
+#instructions {
+    font-size: 25pt;
+    position: relative;
+    top: -525px;
+    right: 13px;
+}
+
+
+/*שורה ראשונה כפתורים*/
+#plates {
+    margin-right: -120px;
+    
+}
+
+#platestwo {
+    margin-right: -120px;
+}
+
+
+/*קישורים שורה ראשונה*/
+#plates a {
+    width: 261px;
+    height: 222px;
+    display: inline-block;
+    margin-top: 135px;
+    margin-right: 206px;
+    text-decoration: none;
+}
+
+/*אנימציה צלחות*/
+.imges {
+    margin-top: -95px;
+    margin-right: 6px;
+    transition: transform 0.2s linear;
+}
+
+.imges:hover {
+    transform: rotate(45deg);
+}
+
+    .imges:focus {
+        transform: rotate(45deg);
+    }
+
+/*כפתורים*/
+
+.buttons img {
+    width: 280px;
+    position: relative;
+    right: -10px;
+    top: -5px;
+    transition: transform 0.2s linear;
+}
+
+
+.buttons span {
+    font-size: 16pt;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    position: relative;
+    top: -51px;
+    right: 85px;
+}
+
+/*מעבר עכבר על הכפתורים*/
+.buttons:hover {
+    transform: scale(1.3);
+}
+
+/*מעבר טאב על הכפתורים*/
+.buttons:focus {
+    transform: scale(1.3);
+}
+
+    /*קישורים שורה שנייה*/
+#platestwo a {
+    width: 261px;
+    height: 222px;
+    display: inline-block;
+    margin-right: 215px;
+    text-decoration: none;
+}
+
+
+/*בורדר קו שחור מסביב לצלחות*/
+.border {
+    width: 265px;
+    height: 200px;
+    border: 1.5px solid black;
+    margin-right: -12px;
+    margin-top: -218px;
+}
+
+    .bordertwo {
+        width: 265px;
+        height: 200px;
+        border: 1.5px solid black;
+        margin-right: -12px;
+        margin-top: -218px;
+    }
+
+/*סוגי ארוחות*/
+#italianhref {
+    position: relative;
+    top: 10px;
+}
+
+#italianbutton {
+    font-size: 16pt;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    position: relative;
+    top: -50px;
+    right: 96px;
+}
+
+#japanbutton {
+    font-size: 16pt;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    position: relative;
+    top: -49px;
+    right: 119px;
+}
+
+#japanhref {
+    position: relative;
+    right: -142px;
+}
+
+#israelbutton {
+    font-size: 16pt;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    position: relative;
+    top: -49px;
+    right: 103px;
+}
+
+#israelhref {
+    position: relative;
+    top: -379px;
+    right: 664px;
+}
+
+#americahref {
+    position: relative;
+    right: -155px;
+}
+
+#mexicohref {
+    position: relative;
+    right: 664px;
+    top: -23px;
+}
+
+#greekbutton {
+    position: relative;
+    right: 118px;
+}
+
+#americabutton {
+    position: relative;
+    right: 90px;
+}
+
+#mexicobutton {
+    position: relative;
+    right: 90px;
+}
+
+
+/*פוטר*/
+    #cheersimg2 {
+        width: 1200px;
+        margin-right: 43px;
+        margin-top: -130px;
+    }
+
+    #logo2 {
+        height: 110px;
+        margin-right: 940px;
+        margin-top: 10px;
+    }
+
+#footer {
+    position: relative;
+    top: -131px;
+    right: 43px;
+    width: 1200px;
+    z-index: -1;
+}
+
+/*מפת אתר*/
+#map {
+    position: relative;
+    top: -139px;
+    right: 218px;
+}
+
+.title3 {
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+
+.alcoholFood {
+    width: 300px;
+    height: 203px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+    .alcoholFood > ul > li > a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+.alcohol {
+    position: absolute;
+    right: 204px;
+    top: 0px;
+    width: 300px;
+    height: 203px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+    .alcohol > ul > li > a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+.taste {
+    width: 300px;
+    height: 203px;
+    float: right;
+    position: absolute;
+    right: 385px;
+    top: 0px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+    .taste > ul > li > a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+.barmen {
+    float: right;
+    position: absolute;
+    right: 604px;
+    top: 0px;
+    width: 219px;
+    height: 203px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+    .barmen > ul > li > a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+
+/*כפתורי פוטר*/
+#about {
+    position: relative;
+    right: 407px;
+    bottom: 35px;
+    width: 117px;
+    padding-bottom: 1px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background-color: #c4bb84;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 12pt;
+    height: 40px;
+    padding-top: 18px;
+}
+
+#contact {
+    position: relative;
+    right: 431px;
+    bottom: 35px;
+    width: 117px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background-color: #c4bb84;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 12pt;
+    height: 41px;
+    padding-top: 18px;
+    
+}
+
+#use {
+    position: relative;
+    right: 456px;
+    bottom: 35px;
+    width: 117px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background-color: #c4bb84;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 12pt;
+    height: 41px;
+    padding-top: 18px;
+}
+
+
+.headLinesBottom{
+    color:black;
+    text-decoration:none;
+}
+
+#line {
+    width: 1200px;
+    height: 6px;
+    position: relative;
+    top: -85px;
+    right: 42px;
+}
+
+/*הורדת קו תחתון לקישורים*/
+.noline {
+    text-decoration: none;
+    color: black;
+}
+
+    .noline:visited {
+        color: black;
+    }
+
+    #notVisited{
+        color:black;
+    }
+
+/*כל הזכויות שמורות*/
+#copyRight {
+    font-size: 18pt;
+    color: white;
+    margin-right: 478px;
+    position: relative;
+    top: -16px;
+}
